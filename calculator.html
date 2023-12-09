@@ -1,0 +1,246 @@
+
+
+<html>
+    <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+    <body class="bg-gray-100">
+
+        <div class="flex flex-row justify-center items-center m-32 ">
+            <div class="flex flex-col justify-center items-center w-60  bg-blue-200 p-4 pt-6 rounded-lg shadow-2xl border-4 border-black bg-gradient-to-t from-blue-200 to-blue-300">
+                <input type="textbox" value ="" id="display" class=" w-52 h-15 text-3xl p-2 rounded border-2 border-black shadow-md mb-3 overflow-x-auto  transition-all" placeholder="Use Calculater" readonly>
+                <div class="flex flex-row justify-center items-center" >
+                    <div>
+                        <button class="text-2xl  bg-blue-200 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-red-500 hover:font-semibold hover:text-gray-800" value ="" id="reverse">AC</button>
+                    </div>
+                    <div>
+                        <button class="text-4xl  bg-blue-200 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-red-400 hover:font-semibold hover:text-gray-800"  id="del" ><img src="trash.svg" class="p-2"/></button>
+                    </div>
+                    <div>
+                        <button class="text-3xl  bg-blue-200 border-2 border-black h-12 w-10 rounded-md shadow-md  transition-all m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-800" value =" X " id="mul">X</button>
+                    </div>
+                    <div>
+                        <button class="text-4xl bg-blue-200 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-800" value =" ÷ " id="div">÷</button>
+                    </div>
+                </div> 
+                <div class="flex flex-row justify-center items-center" >
+                    <div>
+                        <button class="text-3xl bg-blue-300 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-700" value ="9" id="nine">9</button>
+                    </div>
+                    <div>
+                        <button class="text-3xl bg-blue-300 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-700" value ="8" id="eight">8</button>
+                    </div>
+                    <div>
+                        <button class="text-3xl bg-blue-300 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-700" value ="7" id="seven">7</button>
+                    </div>
+                    <div>
+                        <button class="text-5xl bg-blue-300 to-gray-500 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-700" value =" - " id="min">-</button>
+                    </div>
+                </div>  
+
+                <div class="flex flex-row justify-center items-center">
+                    <div>
+                        <button class="text-3xl bg-blue-400 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-500" value ="6" id="six">6</button>
+                    </div>
+                    <div>
+                        <button class="text-3xl bg-blue-400 border-2 border-black h-12 w-10 rounded-md shadow-md  transition-all m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-500" value ="5" id="five">5</button>
+                    </div>
+                    <div>
+                        <button class="text-3xl bg-blue-400 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-500" value ="4" id="four">4</button>
+                    </div>
+                    <div>
+                        <button class="text-4xl bg-blue-400 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-500" value =" + " id="add">+</button>
+                    </div>
+                </div>  
+
+                <div  class="flex flex-row justify-center items-center">
+                   <div class="flex flex-col justify-center items-center">
+                        <div>
+                            <button class="text-3xl bg-blue-500 border-2 border-black h-12 w-10 rounded-md shadow-md  transition-all m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-300" value ="3" id="three">3</button>
+                        </div>
+                        <div>
+                            <button class="text-3xl bg-blue-600 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-100" value ="00" id="zeroo">00</button>
+                        </div>
+                   </div>
+                   <div class="flex flex-col justify-center items-center">
+                        <div>
+                            <button class="text-3xl bg-blue-500 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-300" value ="2" id="two">2</button>
+                        </div>
+                        <div>
+                            <button class="text-4xl bg-blue-600 border-2 border-black h-12 w-10 rounded-md shadow-md  transition-all m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-100" value ="0" id="zero">0</button>
+                        </div>
+                   </div>
+                   <div class="flex flex-col justify-center items-center">
+                        <div>
+                            <button class="text-3xl bg-blue-500 border-2 border-black h-12 w-10 rounded-md shadow-md transition-all  m-2 active:scale-95 active:bg-blue-400 hover:font-semibold hover:text-gray-300" value ="1" id="one">1</button>
+                        </div>
+                        <div>
+                            <button class="text-4xl bg-blue-600 border-2 border-black h-12 w-10 rounded-md shadow-md  transition-all m-2 font-bold active:scale-95 active:bg-blue-400 hover:font-extrabold hover:text-gray-100" value="." id="point">.</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">     
+                        <div>
+                            <button class="text-4xl bg-gradient-to-t from-blue-600 to-blue-500 border-2 border-black h-28 w-10 rounded-md shadow-md transition-all  m-2 font-semibold active:scale-95 active:bg-blue-400 hover:font-bold hover:text-gray-200" value ="=" id="equal">=</button>
+                        </div>
+                    </div>       
+                </div>  
+
+              
+
+             </div>
+        </div>
+        <script>
+                
+                var display  = document.getElementById("display");
+                var zeroo    = document.getElementById("zeroo");
+                var zero     = document.getElementById("zero");
+                var one      = document.getElementById("one");
+                var two      = document.getElementById("two");
+                var three    = document.getElementById("three");
+                var four     = document.getElementById("four");
+                var five     = document.getElementById("five");
+                var six      = document.getElementById("six");
+                var seven    = document.getElementById("seven");
+                var eight    = document.getElementById("eight");
+                var nine     = document.getElementById("nine");
+                var undo     = document.getElementById("del");
+                var mul      = document.getElementById("mul");
+                var div      = document.getElementById("div");
+                var add      = document.getElementById("add");
+                var min      = document.getElementById("min");
+                var equal    = document.getElementById("equal");
+                var point    = document.getElementById("point");
+                var clean    = document.getElementById("reverse");
+           
+                var symbol = "";
+                var a= "";
+
+                function sankhya(){
+                    var old= display.value
+                     display.value = old + event.target.value
+                    
+                   }
+
+                       function jood(Event){
+                    var old= display.value;
+                     display.value = old + event.target.value;
+                     symbol="+";
+                }
+                function gata(Event){
+                    var old= display.value;
+                     display.value = old + event.target.value;
+                     symbol="-";
+                }
+                function guna(Event){
+                    var old= display.value;
+                     display.value = old + event.target.value;
+                     symbol="X";
+                }
+                function bagh(Event){
+                    var old= display.value;
+                     display.value = old + event.target.value;
+                     symbol="÷";
+                }
+                function sech(Event){
+                    var old= display.value;
+                    var size = old.length - 1;
+                    display.value = old.substr(0,size);
+                }
+
+              function Answer(Event){
+    
+
+                if(symbol == "+" ||symbol == "-" ||symbol == "X" ||symbol == "÷"){
+                    a = display.value;   
+                
+
+                var output = a.split(symbol);
+                var oper = outputprovider(symbol, output[0], output[1]);
+                display.value = oper;
+                symbol="";
+                }else{
+                    return display.value;
+                }
+                
+                
+            }
+
+
+                function outputprovider(symbol, value1, value2){   
+                    var output = 0;
+
+                    if(symbol == "+"){
+                        output = parseFloat(value1) + parseFloat(value2);
+                    }else if(symbol == "-"){
+                        output = parseFloat(value1) - parseFloat(value2);
+                    }else if(symbol == "X"){
+                        output = parseFloat(value1) * parseFloat(value2);
+                    }else if(symbol == "÷"){
+                        output = parseFloat(value1) / parseFloat(value2);
+                    }
+
+                    return output;
+                }
+
+                    // function sum(value1, value2){
+                    //     return parseFloat(value1) + parseFloat(value2);
+                    // }
+                    // function minus(value1, value2){
+                    //     return parseFloat(value1) - parseFloat(value2);
+                    // }
+                    // function multiply(value1, value2){
+                    //     return parseFloat(value1) * parseFloat(value2);
+                    // }
+                    // function divide(value1, value2){
+                    //     return parseFloat(value1) / parseFloat(value2);
+                    // }
+                    // function reminder(value1, value2){
+                    //     return parseFloat(value1) % parseFloat(value2);
+                    // }
+
+
+                
+
+                    // if(index == -1 || index == 0){
+                    //     return false;
+                    // }else {
+                    //     return true;
+                    // }
+
+                function delet(Event){
+                    
+                    display.value= event.target.value
+
+               }
+
+        
+
+
+       
+                // display= display.addEventListener("click",Event)
+                point.addEventListener("click",sankhya);
+                zeroo.addEventListener("click",sankhya);
+                zero.addEventListener("click",sankhya);
+                one.addEventListener("click",sankhya);
+                two.addEventListener("click",sankhya);
+                three.addEventListener("click",sankhya);
+                four.addEventListener("click",sankhya);
+                five.addEventListener("click",sankhya);
+                six.addEventListener("click",sankhya);
+                seven.addEventListener("click",sankhya);
+                eight.addEventListener("click",sankhya);
+                nine.addEventListener("click",sankhya);
+                undo.addEventListener("click",sech);
+                mul.addEventListener("click",guna);
+                div.addEventListener("click",bagh);
+                add.addEventListener("click",jood);
+                min.addEventListener("click",gata);
+                 clean.addEventListener("click",delet);
+                equal.addEventListener("click",Answer);
+               
+
+                
+        </script>
+    </body>
+</html>
